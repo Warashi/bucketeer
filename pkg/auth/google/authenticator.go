@@ -38,7 +38,7 @@ import (
 )
 
 const (
-	day       = 24 * time.Hour
+	day       = 1 * time.Minute // FIXME: Revert this
 	sevenDays = 7 * 24 * time.Hour
 )
 
