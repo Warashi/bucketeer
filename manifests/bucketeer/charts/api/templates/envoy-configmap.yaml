@@ -198,7 +198,7 @@ data:
                                     exact: application/json
                             route:
                               cluster: api-rest-v1
-                              timeout: 15s
+                              timeout: 60s
                               retry_policy:
                                 retry_on: 5xx
                                 num_retries: 3
@@ -206,7 +206,7 @@ data:
                               prefix: /
                             route:
                               cluster: api
-                              timeout: 15s
+                              timeout: 60s
                               retry_policy:
                                 retry_on: 5xx
                                 num_retries: 3
@@ -257,7 +257,7 @@ data:
                               prefix: /bucketeer.feature.FeatureService
                             route:
                               cluster: web
-                              timeout: 15s
+                              timeout: 60s
                               retry_policy:
                                 retry_on: 5xx
                                 num_retries: 3
@@ -269,7 +269,7 @@ data:
                               prefix: /bucketeer.account.AccountService
                             route:
                               cluster: web
-                              timeout: 15s
+                              timeout: 60s
                               retry_policy:
                                 retry_on: 5xx
                                 num_retries: 3
@@ -281,7 +281,7 @@ data:
                               prefix: /bucketeer.push.PushService
                             route:
                               cluster: web
-                              timeout: 15s
+                              timeout: 60s
                               retry_policy:
                                 retry_on: 5xx
                                 num_retries: 3

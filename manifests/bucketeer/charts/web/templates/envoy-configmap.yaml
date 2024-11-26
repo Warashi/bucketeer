@@ -506,7 +506,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                             - match:
                                 prefix: /bucketeer.auth.AuthService
                                 headers:
@@ -518,7 +518,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                             - match:
                                 prefix: /bucketeer.auditlog.AuditLogService
                                 headers:
@@ -530,7 +530,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                             - match:
                                 prefix: /bucketeer.autoops.AutoOpsService
                                 headers:
@@ -542,12 +542,12 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                             - match:
                                 prefix: /hook
                               route:
                                 cluster: autoops
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -595,7 +595,7 @@ data:
                                 prefix: /bucketeer.notification.NotificationService
                               route:
                                 cluster: notification
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -603,7 +603,7 @@ data:
                                 prefix: /bucketeer.push.PushService
                               route:
                                 cluster: push
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -618,7 +618,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                     stat_prefix: ingress_http
                     stream_idle_timeout: 300s
               transport_socket:
@@ -783,7 +783,7 @@ data:
                                 prefix: /bucketeer.account.AccountService
                               route:
                                 cluster: account
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -791,7 +791,7 @@ data:
                                 prefix: /bucketeer.auditlog.AuditLogService
                               route:
                                 cluster: auditlog
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -799,7 +799,7 @@ data:
                                 prefix: /bucketeer.auth.AuthService
                               route:
                                 cluster: auth
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -807,7 +807,7 @@ data:
                                 prefix: /bucketeer.autoops.AutoOpsService
                               route:
                                 cluster: autoops
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -815,7 +815,7 @@ data:
                                 prefix: /hook
                               route:
                                 cluster: autoops
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -871,7 +871,7 @@ data:
                                 prefix: /bucketeer.notification.NotificationService
                               route:
                                 cluster: notification
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -879,7 +879,7 @@ data:
                                 prefix: /bucketeer.push.PushService
                               route:
                                 cluster: push
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -887,7 +887,7 @@ data:
                                 prefix: /v3
                               route:
                                 cluster: dashboard
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -895,7 +895,7 @@ data:
                                 prefix: /
                               route:
                                 cluster: web_console
-                                timeout: 15s
+                                timeout: 60s
                                 retry_policy:
                                   retry_on: 5xx
                                   num_retries: 3
@@ -910,7 +910,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
               transport_socket:
                 name: envoy.transport_sockets.tls
                 typed_config:
@@ -961,7 +961,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                             - match:
                                 headers:
                                   - name: content-type
@@ -973,7 +973,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                             - match:
                                 headers:
                                   - name: content-type
@@ -985,7 +985,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                             - match:
                                 headers:
                                   - name: content-type
@@ -997,7 +997,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                             - match:
                                 headers:
                                   - name: content-type
@@ -1009,7 +1009,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                             - match:
                                 headers:
                                   - name: content-type
@@ -1021,7 +1021,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                             - match:
                                 headers:
                                   - name: content-type
@@ -1033,7 +1033,7 @@ data:
                                 retry_policy:
                                   num_retries: 3
                                   retry_on: 5xx
-                                timeout: 15s
+                                timeout: 60s
                     stat_prefix: egress_http
                     stream_idle_timeout: 300s
               transport_socket:
