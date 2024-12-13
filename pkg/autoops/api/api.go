@@ -1162,7 +1162,7 @@ func (s *AutoOpsService) listAutoOpsRules(
 		Orders:      nil,
 	}
 
-	autoOpsRules, nextCursor, err := storage.ListAutoOpsRulesV2(ctx, listOptions)
+	autoOpsRules, nextCursor, err := storage.ListAutoOpsRules(ctx, listOptions)
 	if err != nil {
 		s.logger.Error(
 			"Failed to list autoOpsRules",
