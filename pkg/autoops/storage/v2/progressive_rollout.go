@@ -158,7 +158,6 @@ func (s *progressiveRolloutStorage) ListProgressiveRollouts(
 	ctx context.Context,
 	options *mysql.ListOptions,
 ) ([]*autoopsproto.ProgressiveRollout, int64, int, error) {
-	println("kaki ListProgressiveRolloutsV2")
 	var whereParts []mysql.WherePart = []mysql.WherePart{}
 	var orderBySQL string = ""
 	var limitOffsetSQL string = ""
